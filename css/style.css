@@ -1,0 +1,224 @@
+
+@import url("components/container.css");
+@import url("components/avatar.css");
+@import url("components/button.css");
+@import url("components/banner.css");
+@import url("components/card.css");
+
+.roboto-<uniquifier> {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.lora-<uniquifier> {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+
+
+body{
+  font-family:'Lora',serif;
+  font-size:18px;
+  margin:0px;
+  background-color:#1D4359;
+  color: #2b2d42;
+}
+h1,h3{
+  font-family:'Roboto',sans-serif;
+  font-weight: 600;
+  color: #2c3e50;
+}
+
+h2{
+  font-family:'Roboto',sans-serif;
+  font-weight: 600;
+  color: #D0DFEB;
+  text-align:left;
+}
+
+.avatar{
+  width:60px;
+  height:60px;
+  border-radius:50%;
+}
+
+a{
+  text-decoration:none;
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+  margin: 50px auto;
+  gap: 15px;
+  padding: 40px;
+  background-color:rgba(230, 240, 250, 0.3) ;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08) ;
+  font-family: sans-serif;
+}
+
+form div {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+label {
+  font-weight: 600;
+  color: #153243;
+}
+
+input {
+  padding: 12px 15px;
+  border: 1px solid rgba(230, 240, 250, 0.3);
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: rgba(230, 240, 250, 0.3);
+  transition: border-color 0.2s, background-color 0.2s;
+}
+
+input:focus {
+  outline: none;
+  border-color: #3182ce;
+  background-color: white;
+}
+
+.button {
+  padding: 12px;
+  background-color: #2a6f97;
+  color: #d4c8c7;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #014f86;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  max-width: 1200px;
+  margin:0 auto;
+  padding: 0 20px;
+}
+
+.card {
+  width: 300px;
+  background-color: rgba(230, 240, 250, 0.3);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 15px 30px rgba(0, 0, 0, 0.12);
+}
+
+
+.card h3 {
+  padding: 20px;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+
+
+h1 i, h2 i, .card i {
+  color: #c86d51;
+  margin-left: 5px;
+}
+
+
+button {
+  padding: 12px;
+  background-color: rgba(255, 255, 255, 0.5);
+  color: #1D4359;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+input:focus {
+  outline: none;
+  border-color: #3182ce;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.btn-blue {
+  background-color: #1D4359;
+  color: #D0DFEB;
+  padding: 12px 24px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 600;
+  display: inline-block;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-blue:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #1D4359;
+}
+
+
+
+
+
+
+
+
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 20px auto;
+}
+
+.carousel-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.carousel-image.active {
+  opacity: 1;
+}
